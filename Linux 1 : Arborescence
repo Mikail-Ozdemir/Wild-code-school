@@ -1,0 +1,21 @@
+ubuntu@ubuntu-X550LA:~$ ls
+Bureau     Downloads  Modèles  Public  Téléchargements
+Documents  Images     Musique  snap    Vidéos
+ubuntu@ubuntu-X550LA:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu-X550LA:~$ cd
+ubuntu@ubuntu-X550LA:~$ ls
+Bureau     Downloads  Modèles  Public  Téléchargements
+Documents  Images     Musique  snap    Vidéos
+ubuntu@ubuntu-X550LA:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu-X550LA:~$ cd ..
+ubuntu@ubuntu-X550LA:/home$ cd ..
+ubuntu@ubuntu-X550LA:/$ pwd
+/
+ubuntu@ubuntu-X550LA:/$ ls
+bin    dev   lib    libx32      mnt   root  snap      sys  var
+boot   etc   lib32  lost+found  opt   run   srv       tmp
+cdrom  home  lib64  media       proc  sbin  swapfile  usr
+
+
