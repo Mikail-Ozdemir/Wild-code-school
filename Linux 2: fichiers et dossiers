@@ -1,0 +1,354 @@
+ubuntu@ubuntu-X550LA:~$ cd planets
+ubuntu@ubuntu-X550LA:~/planets$ mkdir réelles
+ubuntu@ubuntu-X550LA:~/planets$ mkdir fictives
+ubuntu@ubuntu-X550LA:~/planets$ mkdir habitées
+ubuntu@ubuntu-X550LA:~/planets$ cd réelles
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mkdir terrestre
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mkdir géante-gazeuses
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mkdir planètes-naines
+ubuntu@ubuntu-X550LA:~/planets/réelles$ cd ..
+ubuntu@ubuntu-X550LA:~/planets$ ls
+arrakis.jpeg    fictives      mercury.jpeg  saturn.jpeg
+coruscant.jpeg  habitées      neptune.jpeg  uranus.jpeg
+cybertron.jpeg  jupiter.jpeg  pluto.jpeg    venus.jpeg
+earth.jpeg      mars.jpeg     réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv mercury.jpeg saturn.jpeg neptune.jpeg jupiter.jpeg pluto.jpeg venus.jpeg earth.jpeg mars.jpeg /réelles
+mv: la cible '/réelles' n'est pas un répertoire
+ubuntu@ubuntu-X550LA:~/planets$ pwd
+/home/ubuntu/planets
+ubuntu@ubuntu-X550LA:~/planets$ mv mercury.jpeg saturn.jpeg neptune.jpeg jupiter.jpeg pluto.jpeg venus.jpeg earth.jpeg mars.jpeg /home/ubuntu/planets
+mv: 'mercury.jpeg' et '/home/ubuntu/planets/mercury.jpeg' identifient le même fichier
+mv: 'saturn.jpeg' et '/home/ubuntu/planets/saturn.jpeg' identifient le même fichier
+mv: 'neptune.jpeg' et '/home/ubuntu/planets/neptune.jpeg' identifient le même fichier
+mv: 'jupiter.jpeg' et '/home/ubuntu/planets/jupiter.jpeg' identifient le même fichier
+mv: 'pluto.jpeg' et '/home/ubuntu/planets/pluto.jpeg' identifient le même fichier
+mv: 'venus.jpeg' et '/home/ubuntu/planets/venus.jpeg' identifient le même fichier
+mv: 'earth.jpeg' et '/home/ubuntu/planets/earth.jpeg' identifient le même fichier
+mv: 'mars.jpeg' et '/home/ubuntu/planets/mars.jpeg' identifient le même fichier
+ubuntu@ubuntu-X550LA:~/planets$ mv mercury.jpeg saturn.jpeg neptune.jpeg jupiter.jpeg pluto.jpeg venus.jpeg earth.jpeg mars.jpeg /home/ubuntu/planets/réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv uranus.jpeg /home/ubuntu/planets/réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv arrakis.jpeg
+mv: opérande de fichier cible manquant après 'arrakis.jpeg'
+Saisissez « mv --help » pour plus d'informations.
+ubuntu@ubuntu-X550LA:~/planets$ ls
+arrakis.jpeg    cybertron.jpeg  habitées
+coruscant.jpeg  fictives        réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv arrakis.jpeg cyrbertron.jpeg coruscant.jpeg /home/ubuntu/planets/fictives
+mv: impossible d'évaluer 'cyrbertron.jpeg': Aucun fichier ou dossier de ce type
+ubuntu@ubuntu-X550LA:~/planets$ mv cyrbertron.jpeg /home/ubuntu/planets/fictives
+mv: impossible d'évaluer 'cyrbertron.jpeg': Aucun fichier ou dossier de ce type
+ubuntu@ubuntu-X550LA:~/planets$ mv cybertron.jpeg /home/ubuntu/planets/fictives
+ubuntu@ubuntu-X550LA:~/planets$ cd fictives
+ubuntu@ubuntu-X550LA:~/planets/fictives$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg
+ubuntu@ubuntu-X550LA:~/planets/fictives$ cp arrakis.jpeg coruscant.jpeg cybertron.jpeg /home/ubuntu/planets/habitées
+ubuntu@ubuntu-X550LA:~/planets/fictives$ cd..
+cd.. : commande introuvable
+ubuntu@ubuntu-X550LA:~/planets/fictives$ cd ..
+ubuntu@ubuntu-X550LA:~/planets$ cd ..
+ubuntu@ubuntu-X550LA:~$ ls
+Bureau     Images   planets      snap
+Documents  Modèles  planets.zip  Téléchargements
+Downloads  Musique  Public       Vidéos
+ubuntu@ubuntu-X550LA:~$ cd planets
+ubuntu@ubuntu-X550LA:~/planets$ ls
+fictives  habitées  réelles
+ubuntu@ubuntu-X550LA:~/planets$ cd réelles
+ubuntu@ubuntu-X550LA:~/planets/réelles$ ls
+earth.jpeg       mercury.jpeg     saturn.jpeg
+géante-gazeuses  neptune.jpeg     terrestre
+jupiter.jpeg     planètes-naines  uranus.jpeg
+mars.jpeg        pluto.jpeg       venus.jpeg
+ubuntu@ubuntu-X550LA:~/planets/réelles$ cp earth.jpeg /home/ubuntu/planets/habitées
+ubuntu@ubuntu-X550LA:~/planets/réelles$ ls
+earth.jpeg       mercury.jpeg     saturn.jpeg
+géante-gazeuses  neptune.jpeg     terrestre
+jupiter.jpeg     planètes-naines  uranus.jpeg
+mars.jpeg        pluto.jpeg       venus.jpeg
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv jupiter.jpeg saturn.jpeg uranus.jpeg neptune.jpeg /home/ubuntu/planets/habitées/géante-gazeuses
+mv: la cible '/home/ubuntu/planets/habitées/géante-gazeuses' n'est pasuubuntu@ubuntu-X550LA:~/planets/réelles$ mv jupiter.jpeg saturn.jpeg uranus.jpeg neptune.jpeg /home/ubuntu/planets/réelles/géante-gazeuses
+ubuntu@ubuntu-X550LA:~/planets/réelles$ ls
+earth.jpeg       mars.jpeg     planètes-naines  terrestre
+géante-gazeuses  mercury.jpeg  pluto.jpeg       venus.jpeg
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv pluto.jpeg /home/ubuntu/planets/réelles/planètes-naines
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv earth.jpeg /home/ubuntu/planets/réelles/terrestre
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv mars.jpeg venus.jpeg /home/ubuntu/planets/réelles/terrestre
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv mercury.jpeg /home/ubuntu/planets/réelles/planètes-naines
+ubuntu@ubuntu-X550LA:~/planets/réelles$ find /home/ubuntu/planets *.jpeg
+/home/ubuntu/planets
+/home/ubuntu/planets/fictives
+/home/ubuntu/planets/fictives/cybertron.jpeg
+/home/ubuntu/planets/fictives/coruscant.jpeg
+/home/ubuntu/planets/fictives/arrakis.jpeg
+/home/ubuntu/planets/réelles
+/home/ubuntu/planets/réelles/géante-gazeuses
+/home/ubuntu/planets/réelles/géante-gazeuses/jupiter.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/uranus.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/saturn.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/neptune.jpeg
+/home/ubuntu/planets/réelles/terrestre
+/home/ubuntu/planets/réelles/terrestre/mars.jpeg
+/home/ubuntu/planets/réelles/terrestre/venus.jpeg
+/home/ubuntu/planets/réelles/terrestre/earth.jpeg
+/home/ubuntu/planets/réelles/planètes-naines
+/home/ubuntu/planets/réelles/planètes-naines/mercury.jpeg
+/home/ubuntu/planets/réelles/planètes-naines/pluto.jpeg
+/home/ubuntu/planets/habitées
+/home/ubuntu/planets/habitées/cybertron.jpeg
+/home/ubuntu/planets/habitées/coruscant.jpeg
+/home/ubuntu/planets/habitées/arrakis.jpeg
+/home/ubuntu/planets/habitées/earth.jpeg
+find: ‘*.jpeg’: Aucun fichier ou dossier de ce type
+ubuntu@ubuntu-X550LA:~/planets/réelles$ sudo rm /home/ubuntu/planets/réelles/planètes-naines/pluto.jpeg
+[sudo] Mot de passe de ubuntu : 
+ubuntu@ubuntu-X550LA:~/planets/réelles$ find /home/ubuntu/planets *.jpeg
+/home/ubuntu/planets
+/home/ubuntu/planets/fictives
+/home/ubuntu/planets/fictives/cybertron.jpeg
+/home/ubuntu/planets/fictives/coruscant.jpegubuntu@ubuntu-X550LA:~$ cd planets
+ubuntu@ubuntu-X550LA:~/planets$ mkdir réelles
+ubuntu@ubuntu-X550LA:~/planets$ mkdir fictives
+ubuntu@ubuntu-X550LA:~/planets$ mkdir habitées
+ubuntu@ubuntu-X550LA:~/planets$ cd réelles
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mkdir terrestre
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mkdir géante-gazeuses
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mkdir planètes-naines
+ubuntu@ubuntu-X550LA:~/planets/réelles$ cd ..
+ubuntu@ubuntu-X550LA:~/planets$ ls
+arrakis.jpeg    fictives      mercury.jpeg  saturn.jpeg
+coruscant.jpeg  habitées      neptune.jpeg  uranus.jpeg
+cybertron.jpeg  jupiter.jpeg  pluto.jpeg    venus.jpeg
+earth.jpeg      mars.jpeg     réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv mercury.jpeg saturn.jpeg neptune.jpeg jupiter.jpeg pluto.jpeg venus.jpeg earth.jpeg mars.jpeg /réelles
+mv: la cible '/réelles' n'est pas un répertoire
+ubuntu@ubuntu-X550LA:~/planets$ pwd
+/home/ubuntu/planets
+ubuntu@ubuntu-X550LA:~/planets$ mv mercury.jpeg saturn.jpeg neptune.jpeg jupiter.jpeg pluto.jpeg venus.jpeg earth.jpeg mars.jpeg /home/ubuntu/planets
+mv: 'mercury.jpeg' et '/home/ubuntu/planets/mercury.jpeg' identifient le même fichier
+mv: 'saturn.jpeg' et '/home/ubuntu/planets/saturn.jpeg' identifient le même fichier
+mv: 'neptune.jpeg' et '/home/ubuntu/planets/neptune.jpeg' identifient le même fichier
+mv: 'jupiter.jpeg' et '/home/ubuntu/planets/jupiter.jpeg' identifient le même fichier
+mv: 'pluto.jpeg' et '/home/ubuntu/planets/pluto.jpeg' identifient le même fichier
+mv: 'venus.jpeg' et '/home/ubuntu/planets/venus.jpeg' identifient le même fichier
+mv: 'earth.jpeg' et '/home/ubuntu/planets/earth.jpeg' identifient le même fichier
+mv: 'mars.jpeg' et '/home/ubuntu/planets/mars.jpeg' identifient le même fichier
+ubuntu@ubuntu-X550LA:~/planets$ mv mercury.jpeg saturn.jpeg neptune.jpeg jupiter.jpeg pluto.jpeg venus.jpeg earth.jpeg mars.jpeg /home/ubuntu/planets/réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv uranus.jpeg /home/ubuntu/planets/réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv arrakis.jpeg
+mv: opérande de fichier cible manquant après 'arrakis.jpeg'
+Saisissez « mv --help » pour plus d'informations.
+ubuntu@ubuntu-X550LA:~/planets$ ls
+arrakis.jpeg    cybertron.jpeg  habitées
+coruscant.jpeg  fictives        réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv arrakis.jpeg cyrbertron.jpeg coruscant.jpeg /home/ubuntu/planets/fictives
+mv: impossible d'évaluer 'cyrbertron.jpeg': Aucun fichier ou dossier de ce type
+ubuntu@ubuntu-X550LA:~/planets$ mv cyrbertron.jpeg /home/ubuntu/planets/fictives
+mv: impossible d'évaluer 'cyrbertron.jpeg': Aucun fichier ou dossier de ce type
+ubuntu@ubuntu-X550LA:~/planets$ mv cybertron.jpeg /home/ubuntu/planets/fictives
+ubuntu@ubuntu-X550LA:~/planets$ cd fictives
+ubuntu@ubuntu-X550LA:~/planets/fictives$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg
+ubuntu@ubuntu-X550LA:~/planets/fictives$ cp arrakis.jpeg coruscant.jpeg cybertron.jpeg /home/ubuntu/planets/habitées
+ubuntu@ubuntu-X550LA:~/planets/fictives$ cd..
+cd.. : commande introuvable
+ubuntu@ubuntu-X550LA:~/planets/fictives$ cd ..
+ubuntu@ubuntu-X550LA:~/planets$ cd ..
+ubuntu@ubuntu-X550LA:~$ ls
+Bureau     Images   planets      snap
+Documents  Modèles  planets.zip  Téléchargements
+Downloads  Musique  Public       Vidéos
+ubuntu@ubuntu-X550LA:~$ cd planets
+ubuntu@ubuntu-X550LA:~/planets$ ls
+fictives  habitées  réelles
+ubuntu@ubuntu-X550LA:~/planets$ cd réelles
+ubuntu@ubuntu-X550LA:~/planets/réelles$ ls
+earth.jpeg       mercury.jpeg     saturn.jpeg
+géante-gazeuses  neptune.jpeg     terrestre
+jupiter.jpeg     planètes-naines  uranus.jpeg
+mars.jpeg        pluto.jpeg       venus.jpeg
+ubuntu@ubuntu-X550LA:~/planets/réelles$ cp earth.jpeg /home/ubuntu/planets/habitées
+ubuntu@ubuntu-X550LA:~/planets/réelles$ ls
+earth.jpeg       mercury.jpeg     saturn.jpeg
+géante-gazeuses  neptune.jpeg     terrestre
+jupiter.jpeg     planètes-naines  uranus.jpeg
+mars.jpeg        pluto.jpeg       venus.jpeg
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv jupiter.jpeg saturn.jpeg uranus.jpeg neptune.jpeg /home/ubuntu/planets/habitées/géante-gazeuses
+mv: la cible '/home/ubuntu/planets/habitées/géante-gazeuses' n'est pasuubuntu@ubuntu-X550LA:~/planets/réelles$ mv jupiter.jpeg saturn.jpeg uranus.jpeg neptune.jpeg /home/ubuntu/planets/réelles/géante-gazeuses
+ubuntu@ubuntu-X550LA:~/planets/réelles$ ls
+earth.jpeg       mars.jpeg     planètes-naines  terrestre
+géante-gazeuses  mercury.jpeg  pluto.jpeg       venus.jpeg
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv pluto.jpeg /home/ubuntu/planets/réelles/planètes-naines
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv earth.jpeg /home/ubuntu/planets/réelles/terrestre
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv mars.jpeg venus.jpeg /home/ubuntu/planets/réelles/terrestre
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv mercury.jpeg /home/ubuntu/planets/réelles/planètes-naines
+ubuntu@ubuntu-X550LA:~/planets/réelles$ find /home/ubuntu/planets *.jpeg
+/home/ubuntu/planets
+/home/ubuntu/planets/fictives
+/home/ubuntu/planets/fictives/cybertron.jpeg
+/home/ubuntu/planets/fictives/coruscant.jpeg
+/home/ubuntu/planets/fictives/arrakis.jpeg
+/home/ubuntu/planets/réelles
+/home/ubuntu/planets/réelles/géante-gazeuses
+/home/ubuntu/planets/réelles/géante-gazeuses/jupiter.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/uranus.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/saturn.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/neptune.jpeg
+/home/ubuntu/planets/réelles/terrestre
+/home/ubuntu/planets/réelles/terrestre/mars.jpeg
+/home/ubuntu/planets/réelles/terrestre/venus.jpeg
+/home/ubuntu/planets/réelles/terrestre/earth.jpeg
+/home/ubuntu/planets/réelles/planètes-naines
+/home/ubuntu/planets/réelles/planètes-naines/mercury.jpeg
+/home/ubuntu/planets/réelles/planètes-naines/pluto.jpeg
+/home/ubuntu/planets/habitées
+/home/ubuntu/planets/habitées/cybertron.jpeg
+/home/ubuntu/planets/habitées/coruscant.jpeg
+/home/ubuntu/planets/habitées/arrakis.jpeg
+/home/ubuntu/planets/habitées/earth.jpeg
+find: ‘*.jpeg’: Aucun fichier ou dossier de ce type
+ubuntu@ubuntu-X550LA:~/planets/réelles$ sudo rm /home/ubuntu/planets/réelles/planètes-naines/pluto.jpeg
+[sudo] Mot de passe de ubuntu : 
+ubuntu@ubuntu-X550LA:~/planets/réelles$ find /home/ubuntu/planets *.jpeg
+/home/ubuntu/planets
+/home/ubuntu/planets/fictives
+/home/ubuntu/planets/fictives/cybertron.jpeg
+/home/ubuntu/planets/fictives/coruscant.jpeg
+/home/ubuntu/planets/fictives/arrakis.jpeg
+/home/ubuntu/planets/réelles
+/home/ubuntu/planets/réelles/géante-gazeuses
+/home/ubuntu/planets/réelles/géante-gazeuses/jupiter.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/uranus.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/saturn.jpegubuntu@ubuntu-X550LA:~$ cd planets
+ubuntu@ubuntu-X550LA:~/planets$ mkdir réelles
+ubuntu@ubuntu-X550LA:~/planets$ mkdir fictives
+ubuntu@ubuntu-X550LA:~/planets$ mkdir habitées
+ubuntu@ubuntu-X550LA:~/planets$ cd réelles
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mkdir terrestre
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mkdir géante-gazeuses
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mkdir planètes-naines
+ubuntu@ubuntu-X550LA:~/planets/réelles$ cd ..
+ubuntu@ubuntu-X550LA:~/planets$ ls
+arrakis.jpeg    fictives      mercury.jpeg  saturn.jpeg
+coruscant.jpeg  habitées      neptune.jpeg  uranus.jpeg
+cybertron.jpeg  jupiter.jpeg  pluto.jpeg    venus.jpeg
+earth.jpeg      mars.jpeg     réelles
+ubuntu@ubuntu-X550LA:~/planets$ pwd
+/home/ubuntu/planets
+ubuntu@ubuntu-X550LA:~/planets$ mv mercury.jpeg saturn.jpeg neptune.jpeg jupiter.jpeg pluto.jpeg venus.jpeg earth.jpeg mars.jpeg /home/ubuntu/planets
+mv: 'mercury.jpeg' et '/home/ubuntu/planets/mercury.jpeg' identifient le même fichier
+mv: 'saturn.jpeg' et '/home/ubuntu/planets/saturn.jpeg' identifient le même fichier
+mv: 'neptune.jpeg' et '/home/ubuntu/planets/neptune.jpeg' identifient le même fichier
+mv: 'jupiter.jpeg' et '/home/ubuntu/planets/jupiter.jpeg' identifient le même fichier
+mv: 'pluto.jpeg' et '/home/ubuntu/planets/pluto.jpeg' identifient le même fichier
+mv: 'venus.jpeg' et '/home/ubuntu/planets/venus.jpeg' identifient le même fichier
+mv: 'earth.jpeg' et '/home/ubuntu/planets/earth.jpeg' identifient le même fichier
+mv: 'mars.jpeg' et '/home/ubuntu/planets/mars.jpeg' identifient le même fichier
+ubuntu@ubuntu-X550LA:~/planets$ mv mercury.jpeg saturn.jpeg neptune.jpeg jupiter.jpeg pluto.jpeg venus.jpeg earth.jpeg mars.jpeg /home/ubuntu/planets/réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv uranus.jpeg /home/ubuntu/planets/réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv arrakis.jpeg
+mv: opérande de fichier cible manquant après 'arrakis.jpeg'
+Saisissez « mv --help » pour plus d'informations.
+ubuntu@ubuntu-X550LA:~/planets$ ls
+arrakis.jpeg    cybertron.jpeg  habitées
+coruscant.jpeg  fictives        réelles
+ubuntu@ubuntu-X550LA:~/planets$ mv arrakis.jpeg cyrbertron.jpeg coruscant.jpeg /home/ubuntu/planets/fictives
+mv: impossible d'évaluer 'cyrbertron.jpeg': Aucun fichier ou dossier de ce type
+ubuntu@ubuntu-X550LA:~/planets$ mv cyrbertron.jpeg /home/ubuntu/planets/fictives
+mv: impossible d'évaluer 'cyrbertron.jpeg': Aucun fichier ou dossier de ce type
+ubuntu@ubuntu-X550LA:~/planets$ mv cybertron.jpeg /home/ubuntu/planets/fictives
+ubuntu@ubuntu-X550LA:~/planets$ cd fictives
+ubuntu@ubuntu-X550LA:~/planets/fictives$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg
+ubuntu@ubuntu-X550LA:~/planets/fictives$ cp arrakis.jpeg coruscant.jpeg cybertron.jpeg /home/ubuntu/planets/habitées
+ubuntu@ubuntu-X550LA:~/planets/fictives$ cd..
+cd.. : commande introuvable
+ubuntu@ubuntu-X550LA:~/planets/fictives$ cd ..
+ubuntu@ubuntu-X550LA:~/planets$ cd ..
+ubuntu@ubuntu-X550LA:~$ ls
+Bureau     Images   planets      snap
+Documents  Modèles  planets.zip  Téléchargements
+Downloads  Musique  Public       Vidéos
+ubuntu@ubuntu-X550LA:~$ cd planets
+ubuntu@ubuntu-X550LA:~/planets$ ls
+fictives  habitées  réelles
+ubuntu@ubuntu-X550LA:~/planets$ cd réelles
+ubuntu@ubuntu-X550LA:~/planets/réelles$ ls
+earth.jpeg       mercury.jpeg     saturn.jpeg
+géante-gazeuses  neptune.jpeg     terrestre
+jupiter.jpeg     planètes-naines  uranus.jpeg
+mars.jpeg        pluto.jpeg       venus.jpeg
+ubuntu@ubuntu-X550LA:~/planets/réelles$ cp earth.jpeg /home/ubuntu/planets/habitées
+ubuntu@ubuntu-X550LA:~/planets/réelles$ ls
+earth.jpeg       mercury.jpeg     saturn.jpeg
+géante-gazeuses  neptune.jpeg     terrestre
+jupiter.jpeg     planètes-naines  uranus.jpeg
+mars.jpeg        pluto.jpeg       venus.jpeg
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv jupiter.jpeg saturn.jpeg uranus.jpeg neptune.jpeg /home/ubuntu/planets/habitées/géante-gazeuses
+mv: la cible '/home/ubuntu/planets/habitées/géante-gazeuses' n'est pasuubuntu@ubuntu-X550LA:~/planets/réelles$ mv jupiter.jpeg saturn.jpeg uranus.jpeg neptune.jpeg /home/ubuntu/planets/réelles/géante-gazeuses
+ubuntu@ubuntu-X550LA:~/planets/réelles$ ls
+earth.jpeg       mars.jpeg     planètes-naines  terrestre
+géante-gazeuses  mercury.jpeg  pluto.jpeg       venus.jpeg
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv pluto.jpeg /home/ubuntu/planets/réelles/planètes-naines
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv earth.jpeg /home/ubuntu/planets/réelles/terrestre
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv mars.jpeg venus.jpeg /home/ubuntu/planets/réelles/terrestre
+ubuntu@ubuntu-X550LA:~/planets/réelles$ mv mercury.jpeg /home/ubuntu/planets/réelles/planètes-naines
+ubuntu@ubuntu-X550LA:~/planets/réelles$ sudo rm /home/ubuntu/planets/réelles/planètes-naines/pluto.jpeg
+[sudo] Mot de passe de ubuntu : 
+ubuntu@ubuntu-X550LA:~/planets/réelles$ find /home/ubuntu/planets *.jpeg
+/home/ubuntu/planets
+/home/ubuntu/planets/fictives
+/home/ubuntu/planets/fictives/cybertron.jpeg
+/home/ubuntu/planets/fictives/coruscant.jpeg
+/home/ubuntu/planets/fictives/arrakis.jpeg
+/home/ubuntu/planets/réelles
+/home/ubuntu/planets/réelles/géante-gazeuses
+/home/ubuntu/planets/réelles/géante-gazeuses/jupiter.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/uranus.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/saturn.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/neptune.jpeg
+/home/ubuntu/planets/réelles/terrestre
+/home/ubuntu/planets/réelles/terrestre/mars.jpeg
+/home/ubuntu/planets/réelles/terrestre/venus.jpeg
+/home/ubuntu/planets/réelles/terrestre/earth.jpeg
+/home/ubuntu/planets/réelles/planètes-naines
+/home/ubuntu/planets/réelles/planètes-naines/mercury.jpeg
+/home/ubuntu/planets/habitées
+/home/ubuntu/planets/habitées/cybertron.jpeg
+/home/ubuntu/planets/habitées/coruscant.jpeg
+/home/ubuntu/planets/habitées/arrakis.jpeg
+/home/ubuntu/planets/habitées/earth.jpeg
+find: ‘*.jpeg’: Aucun fichier ou dossier de ce type
+
+/home/ubuntu/planets/réelles/géante-gazeuses/neptune.jpeg
+/home/ubuntu/planets/réelles/terrestre
+/home/ubuntu/planets/réelles/terrestre/mars.jpeg
+/home/ubuntu/planets/réelles/terrestre/venus.jpeg
+/home/ubuntu/planets/réelles/terrestre/earth.jpeg
+/home/ubuntu/planets/réelles/planètes-naines
+/home/ubuntu/planets/réelles/planètes-naines/mercury.jpeg
+/home/ubuntu/planets/habitées
+/home/ubuntu/planets/habitées/cybertron.jpeg
+/home/ubuntu/planets/habitées/coruscant.jpeg
+/home/ubuntu/planets/habitées/arrakis.jpeg
+/home/ubuntu/planets/habitées/earth.jpeg
+find: ‘*.jpeg’: Aucun fichier ou dossier de ce type
+
+/home/ubuntu/planets/fictives/arrakis.jpeg
+/home/ubuntu/planets/réelles
+/home/ubuntu/planets/réelles/géante-gazeuses
+/home/ubuntu/planets/réelles/géante-gazeuses/jupiter.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/uranus.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/saturn.jpeg
+/home/ubuntu/planets/réelles/géante-gazeuses/neptune.jpeg
+/home/ubuntu/planets/réelles/terrestre
+/home/ubuntu/planets/réelles/terrestre/mars.jpeg
+/home/ubuntu/planets/réelles/terrestre/venus.jpeg
+/home/ubuntu/planets/réelles/terrestre/earth.jpeg
+/home/ubuntu/planets/réelles/planètes-naines
+/home/ubuntu/planets/réelles/planètes-naines/mercury.jpeg
+/home/ubuntu/planets/habitées
+/home/ubuntu/planets/habitées/cybertron.jpeg
+/home/ubuntu/planets/habitées/coruscant.jpeg
+/home/ubuntu/planets/habitées/arrakis.jpeg
+/home/ubuntu/planets/habitées/earth.jpeg
+find: ‘*.jpeg’: Aucun fichier ou dossier de ce type
